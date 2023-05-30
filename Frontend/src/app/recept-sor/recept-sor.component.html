@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{kep}}" alt="" class="img-fluid" style="width: 100%; height: auto;">
+        </div>
+        <div class="col-md-6 list-group">
+            <ul *ngIf="nev" style="width: 100%; padding-left: 15px;">
+                <li class="list-group-item">
+                    <p>Recept neve: {{nev}}</p>
+                </li>
+                <li class="list-group-item">
+                    <p>Kategória: {{kat}}</p>
+                </li>
+                <li class="list-group-item">
+                    <p>Leírás: {{leiras}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

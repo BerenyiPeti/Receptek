@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <select #kategoria id="cars" class="form-select" (change)="onSelected(kategoria.value)">
+                <option>összes</option>
+                <option *ngFor="let kat of kategoriak">{{kat.nev}}</option>
+            </select>
+        </div>
+        <div class="col-md-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Recept neve</th>
+                        <th>Kategória</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let sor of adatok" (click)="onClickSor(sor.id)" style="cursor: pointer">
+                        <td>{{sor.nev}}</td>
+                        <td>{{sor.katNev}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- <div class="container">
+</div> -->
+<app-recept-sor></app-recept-sor>

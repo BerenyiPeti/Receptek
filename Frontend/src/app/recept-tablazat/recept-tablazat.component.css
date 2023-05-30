@@ -1,0 +1,10 @@
+tbody tr:hover {
+    background-color: cyan;
+}
+
+select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
